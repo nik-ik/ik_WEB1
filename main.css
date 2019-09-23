@@ -1,0 +1,405 @@
+.wave{
+    position: relative;
+}
+.container{
+    display: grid;
+    grid:
+    "header header header" 100px
+    "main main main" 1100px
+    "footer footer aside" 300px
+    /1fr 1fr 1fr;
+}
+header{
+    grid-area: header;
+}
+header h1{
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+    padding: 4px 16px;
+    animation: neon 20s forwards;
+    position: fixed;
+}
+header h2{
+    font-weight: 300;
+    font-size: 16px;
+    color: white;
+    padding: 4px 16px;
+    animation: neon 20s forwards;
+    position: fixed;
+    top: 40px;
+}
+main{
+    grid-area: main;
+}
+article.untexted{
+    width: 100%;
+    height: 200px;
+}
+.field{
+    width: 100%;
+    height: 1800px;
+    position: absolute;
+    top: -300px;
+}
+.move-add1{
+    position: absolute;
+    animation: move-post 20s infinite alternate;
+}
+.move-add2{
+    position: absolute;
+    animation: move-post 30s infinite alternate-reverse;
+}
+.move-add3{
+    position: absolute;
+    animation: move-post 40s -15s infinite alternate;
+}
+main button{
+    all:unset;
+    display: block;
+    color:white;
+    margin-bottom: 4px;
+    font-weight: 800;
+    background: rgba(161, 8, 34, 0.5);
+    padding: 36px 24px; 
+    border-radius: 50%
+}
+.buttons1{
+    display: none;
+    width: 100px;
+    height: 200px;
+    position: relative;
+    top:-276px
+}
+.buttons2{
+    display: none;
+    width: 100px;
+    height: 200px;
+    position: relative;
+    top:-276px
+}
+.buttons3{
+    display: none;
+    width: 100px;
+    height: 200px;
+    position: relative;
+    top:-276px
+}
+.delete1{
+    position: relative;
+    animation: move-delete 1s;
+    z-index: 1;
+}
+.encryption1{
+    position: relative;
+    animation: move-encry 1s;
+    z-index: 1;
+}
+.delete2{
+    position: relative;
+    animation: move-delete 1s;
+    z-index: 1;
+}
+.encryption2{
+    position: relative;
+    animation: move-encry 1s;
+    z-index: 1;
+}
+.delete3{
+    position: relative;
+    animation: move-delete 1s;
+    z-index: 1;
+}
+.encryption3{
+    position: relative;
+    animation: move-encry 1s;
+    z-index: 1;
+}
+.add{
+    position: relative;
+    z-index: 2;
+}
+.add:hover +.buttons1{
+    display: block;
+}
+.add:hover +.buttons2{
+    display: block;
+}
+.add:hover +.buttons3{
+    display: block;
+}
+.add2{
+    position: relative;
+    z-index: 2;
+}
+.add2:hover +.buttons{
+    display: block;
+}
+.add3{
+    position: relative;
+    z-index: 2;
+}
+.add3:hover +.buttons{
+    display: block;
+}
+main button:hover{
+    background: rgba(85, 3, 16, 0.5);
+}
+main .buttons .delete1{
+    padding: 36px 17px;
+}
+main .buttons .delete2{
+    padding: 36px 17px;
+}
+main .buttons .delete3{
+    padding: 36px 17px;
+}
+aside{
+    grid-area: aside;
+}
+aside .wall{
+    width: 90%;
+    height: 90%;
+    background: #ED4C67;
+    opacity: 0.8;
+}
+footer{
+    grid-area: footer;
+}
+footer span{
+    font-size:12px;
+    background:white;
+    height: 4px;
+}
+footer p{
+    color: white;
+    padding: 4px 16px;
+    text-align: justify;
+    opacity: 0.95;
+}
+.colorset{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+.colorbox1{
+    animation: color 5s infinite alternate;
+}
+.colorbox2{
+    animation: color 5s 0.2s infinite alternate;
+}
+.colorbox3{
+    animation: color 5s 0.4s infinite alternate;
+}
+.colorbox4{
+    animation: color 5s 0.6s infinite alternate;
+}
+.colorbox5{
+    animation: color 5s 0.8s infinite alternate;
+}
+.colorbox6{
+    animation: color 5s 1s infinite alternate;
+}
+.colorbox7{
+    animation: color 5s 1.2s infinite alternate;
+}
+.colorbox8{
+    animation: color 5s 1.4s infinite alternate;
+}
+.colorbox9{
+    animation: color 5s 1.6s infinite alternate;
+}
+.colorbox10{
+    animation: color 5s 1.8s infinite alternate;
+}
+.colorbox11{
+    animation: color 5s 2.0s infinite alternate;
+}
+.colorbox12{
+    animation: color 5s 2.2s infinite alternate;
+}
+.colorbox13{
+    animation: color 5s 2.4s infinite alternate;
+}
+.colorbox14{
+    animation: color 5s 2.6s infinite alternate;
+}
+.colorbox15{
+    animation: color 5s 2.8s infinite alternate;
+}
+.colorbox16{
+    animation: color 5s 3.0s infinite alternate;
+}
+.colorbox17{
+    animation: color 5s 3.2s infinite alternate;
+}
+.colorbox18{
+    animation: color 5s 3.4s infinite alternate;
+}
+.colorbox19{
+    animation: color 5s 3.6s infinite alternate;
+}
+.colorbox20{
+    animation: color 5s 3.8s infinite alternate;
+}
+.colorbox21{
+    animation: color 5s 4.0s infinite alternate;
+}
+.colorbox22{
+    animation: color 5s 4.2s infinite alternate;
+}
+.colorbox23{
+    animation: color 5s 4.4s infinite alternate;
+}
+.colorbox24{
+    animation: color 5s 4.6s infinite alternate;
+}
+.colorbox25{
+    animation: color 5s 4.8s infinite alternate;
+}
+.colorbox26{
+    animation: color 5s 5s infinite alternate;
+}
+.colorbox27{
+    animation: color 5s 4.8s infinite alternate;
+}
+.colorbox28{
+    animation: color 5s 4.6s infinite alternate;
+}
+.colorbox29{
+    animation: color 5s 4.4s infinite alternate;
+}
+.colorbox30{
+    animation: color 5s 4.2s infinite alternate;
+}
+.colorbox31{
+    animation: color 5s 4.0s infinite alternate;
+}
+.colorbox32{
+    animation: color 5s 3.8s infinite alternate;
+}
+.colorbox33{
+    animation: color 5s 3.6s infinite alternate;
+}
+.colorbox34{
+    animation: color 5s 3.4s infinite alternate;
+}
+.colorbox35{
+    animation: color 5s 3.2s infinite alternate;
+}
+.colorbox36{
+    animation: color 5s 3.0s infinite alternate;
+}
+.colorbox37{
+    animation: color 5s 2.8s infinite alternate;
+}
+.colorbox38{
+    animation: color 5s 2.6s infinite alternate;
+}
+.colorbox39{
+    animation: color 5s 2.4s infinite alternate;
+}
+.colorbox40{
+    animation: color 5s 2.2s infinite alternate;
+}
+.colorbox41{
+    animation: color 5s 2.0s infinite alternate;
+}
+.colorbox42{
+    animation: color 5s 1.8s infinite alternate;
+}
+.colorbox43{
+    animation: color 5s 1.6s infinite alternate;
+}
+.colorbox44{
+    animation: color 5s 1.4s infinite alternate;
+}
+.colorbox45{
+    animation: color 5s 1.2s infinite alternate;
+}
+.colorbox46{
+    animation: color 5s 1.0s infinite alternate;
+}
+.colorbox47{
+    animation: color 5s 0.8s infinite alternate;
+}
+.colorbox48{
+    animation: color 5s 0.6s infinite alternate;
+}
+.colorbox49{
+    animation: color 5s 0.4s infinite alternate;
+}
+.colorbox50{
+    animation: color 5s 0.2s infinite alternate;
+}
+.clearfix:afer{
+    content: "";
+    clear: both;
+    display: block
+}
+@keyframes color{
+    0% {
+        width: 10%;
+        height: 50px;
+        background: #ED4C67;
+    }
+    100% {
+        width: 10%;
+        height: 50px;
+        background: rgb(238, 7, 45);
+    }
+}
+@keyframes move-delete{
+    0%{
+        top: 90px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 100;
+    }
+}
+@keyframes move-encry{
+    0%{
+        top: 180px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 100;
+    }
+}
+@keyframes move-post{
+    0%{
+        top: 20%;
+        left: 0%;
+    }
+    20%{
+        top: 80%;
+        left: 20%;
+    }
+    50%{
+        top: 20%;
+        left: 60%
+    }
+    80%{
+        top: 80%;
+        left: 10%;
+    }
+    100%{
+        top: 20%;
+        left: 80%;
+    }
+}
+@keyframes neon{
+    0% { opacity: 0;}
+    20%{ opacity: 1;}
+    25%{opacity: 0.5;}
+    30%{opacity: 1;}
+    100%{opacity: 0.95;}
+
+}
